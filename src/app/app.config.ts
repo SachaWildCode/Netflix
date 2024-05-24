@@ -19,6 +19,6 @@ export const appConfig: ApplicationConfig = {
       withPreloading(PreloadAllModules),
       withDebugTracing()
     ),
-    FormBuilder,
+    { provide: FormBuilder, useClass: FormBuilder },
   ],
 };
