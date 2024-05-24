@@ -1,0 +1,28 @@
+header {
+  color: white;
+  display: flex;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  z-index: 1;
+}
+header > div:nth-child(1) {
+  position: relative;
+}
+.logoNavbar {
+  color: rgb(229, 9, 20);
+  fill: currentColor;
+  width: 148px;
+  height: 40px;
+}
+
+header > div:nth-child(2) {
+  flex: 1;
+}
+@media screen and (min-width: 1280px) {
+  header {
+    max-width: calc(83.33333333333334% - 6rem);
+  }
+}
